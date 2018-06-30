@@ -1,0 +1,19 @@
+<h1><%= @book.title %></h1>
+<% if @impression.errors.any? %>
+  <div id="error_explanation" class="alert alert-danger">
+    <ul>
+      <% @impression.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+<%= form_for([@book,@impression]) do |f| %>
+
+
+
+<h2>感想投稿フォーム</h2>
+    <%= f.text_field :impression %>
+
+    <%= f.submit '投稿する' %>
+ <% end %>

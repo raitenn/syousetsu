@@ -1,0 +1,9 @@
+<h1>投稿小説全一覧</h1>
+<%= paginate @books %>
+<% @books.each do |book| %>
+    <div class="taitoru"><span><%=link_to book.title, book_path(book.id) %></span></div>
+    <div class="arasuji2"><span><%= book.arasuji %></span></div>
+    
+
+ <% end %>
+ <%= paginate @books %>

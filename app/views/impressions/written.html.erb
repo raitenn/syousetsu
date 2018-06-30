@@ -1,0 +1,17 @@
+<div class="container"> <!-- ここを追加 -->
+      <div class="row">
+
+<h2>書いた感想一覧</h2>
+<%= paginate @impressions %>
+<% @user.each do |impression| %>
+<div class="box31">
+<div class="box30">
+    <div class="box-title"><%= impression.user.name %></div>
+    <p><%= impression.impression %></p>
+</div>
+</div>
+<% end %>
+</div>
+</div>
+</div>
+<%= paginate @impressions %>

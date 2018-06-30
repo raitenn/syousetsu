@@ -1,0 +1,66 @@
+<h1>小説編集ページ</h1>
+<div class="table-responsive col-md-8 col-md-offset-2">
+<table class="table table-striped">
+                <thead>
+	                <tr>
+	                	<th>タイトル</th>
+	                	<th></th>
+
+	                </tr>
+                </thead>
+	                <tbody>
+		            	<tr>
+		                        <td><%= @book.title %></td>
+		                        <td><%= link_to 'タイトルを編集する', title_edit_book_path %></td>
+
+		                </tr>
+	                </tbody>
+            </table>
+        </div>
+
+<div class="table-responsive col-md-8 col-md-offset-2">
+<table class="table table-striped">
+                <thead>
+	                <tr>
+	                	<th>あらすじ</th>
+	                	<th></th>
+
+	                </tr>
+                </thead>
+	                <tbody>
+		            	<tr>
+		                        <td><%= @book.arasuji %></td>
+		                        <td><%= link_to 'このあらすじを編集する', arasuji_edit_book_path %></td>
+
+		                </tr>
+	                </tbody>
+            </table>
+        </div>
+
+<div class="table-responsive col-md-8 col-md-offset-2">
+<table class="table table-striped">
+                <thead>
+	                <tr>
+	                	<th>サブタイトル</th>
+	                	<th></th>
+	                	<th></th>
+
+	                </tr>
+                </thead>
+                <% @book.chapter.each do |chapter| %>
+	                <tbody>
+		            	<tr>
+		                        <td><div class="subtitle2"><span><%=link_to chapter.subtitle, book_chapter_path(@book, chapter) %></span></div></td>
+		                        <td><%= link_to 'このサブタイトルを編集する', edit_book_chapter_path(chapter.book,chapter) %></td>
+		                        <td><%= link_to 'このサブタイトルを削除する', book_chapter_path(chapter.book,chapter), method: :'delete' %></td>
+
+		                </tr>
+	                </tbody>
+                <% end %>
+            </table>
+        </div>
+
+
+
+
+

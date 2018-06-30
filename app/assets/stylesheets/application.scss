@@ -1,0 +1,483 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+
+body{
+  background-image: url(books.jpg);
+  /*background-image: url(img/mv.jpg);*/
+  background-size: cover;
+}
+.ranking {
+	font-size:30px;
+	text-align:center;
+}
+.eturann {
+	font-size:20px;
+}
+.mypage{
+	text-align:center;
+	width: 30%;
+	margin:auto;
+}
+.btn btn-primary btn-lg {
+	display: block;
+}
+.syousetumenyu{
+	float: left;
+	margin: auto;
+}
+.kannsoumeyu{
+	float: right;
+	margin:auto;
+}
+.container{
+	width: 100%;
+}
+.itirann{
+	text-align:center;
+	padding-top: 300px;
+}
+.daimei{
+	font-size:40px;
+	padding-top: 20px;
+	padding-left: 50px;
+}
+.management{
+	text-align: center;
+}
+.arasuji{
+	font-size:40px;
+	padding-top: 100px;
+	padding-left: 50px;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+*{
+  padding:0;
+  margin:0;
+}
+
+body{
+  font-family:'Open Sans',sans-serif;
+}
+fieldset{
+  width:400px;
+  margin:0 auto;
+  margin-top:8px;
+  margin-bottom:2%;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+
+}
+h1{
+  background:#004A3E;
+  padding:20px 0; /*PADDING TODOS OS LADOS DE 20PX*/
+  font-size:140%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+}
+form{
+  background:#f0f0f0;
+  padding:6% 4%;
+}
+input[type="password"]{
+  width:76%;
+  height:20px;
+  margin-bottom:4%;
+  border:1px solid #ccc;
+  padding:4% 4% 4% 4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:30px;
+  color:#555;
+}
+.iconPassword{
+  width:20px;
+  height:20px;
+  background-color:#004A3E;
+  float:left;
+  padding:4% 4% 4% 4%;
+  margin-bottom:4%;
+  background-repeat:no-repeat;
+   background-image:url(https://cdn4.iconfinder.com/data/icons/font-awesome-2/2048/f09c-32.png);
+  background-position:center;
+  border:1px solid #ccc;
+}
+.iconUser{
+  width:20px;
+  height:20px;
+  background-color:#004A3E;
+  float:left;
+  padding:4% 4% 4% 4%;
+  margin-bottom:4%;
+  background-repeat:no-repeat;
+   background-image:url(https://cdn4.iconfinder.com/data/icons/font-awesome-2/2048/f007-32.png);
+  background-position:center;
+  border:1px solid #ccc;
+}
+input[type="text"]{
+  width:76%;
+  height:20px;
+  margin-bottom:4%;
+  border:1px solid #ccc;
+  padding:4% 4% 4% 4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:30px;
+  color:#555;
+}
+input[type="submit"]{
+  width:100%;
+  background:#004A3E;
+  border:0;
+  padding:4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:100%;
+  color:#fff;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+input[type="submit"]:hover{
+  background:#53B9A8;
+}
+::-webkit-input-placeholder {
+
+}
+.taitoru{
+	text-align: center;
+	padding-top: 30px;
+	font-size: 40px;
+}
+.arasuji2{
+	text-align: center;
+	padding-top: 30px;
+	font-size: 30px;
+}
+.taitoru2{
+	text-align: center;
+	padding-top: 30px;
+	font-size: 60px;
+}
+.arasuji3{
+	text-align: center;
+	padding-top: 30px;
+	font-size: 40px;
+}
+.sub2{
+	font-size: 30px;
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing:         border-box;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{font-family: 'Open Sans';}
+a{color: #000; text-decoration: none;}
+img{max-width: 100%;}
+img a{border: none;}
+ul{list-style-type: none;}
+
+/* Fin Réinitialisation */
+
+/* Démo */
+
+body{
+    /*background: #f5f5f5;*/
+    padding-bottom: 30px;
+}
+
+.demo{
+    width: 600px;
+    margin: 100px auto 0 auto;
+}
+
+.demo h2{
+    font-weight: 300;
+    color: #444;
+    font-size: 1.4em;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.demo p{
+    font-weight: 300;
+    color: #444;
+    font-size: 0.9em;
+    line-height: 25px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.demo span{
+    display: block;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.75em;
+    text-align: center;
+    color: #6a6a6a
+}
+
+.demo span a{
+   color: #6a6a6a 
+}
+
+.demo span a:hover{
+   text-decoration: underline;
+}
+
+/* Old-Select */
+
+.old-select{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+/* New-Select */
+
+.new-select{
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    
+    margin-top: 50px;
+    text-align: center;
+    color: #444;
+    line-height: 50px;
+    position: relative;
+}
+
+.new-select .selection:active{
+    transform:         rotateX(42deg);
+    -o-transform:      rotateX(42deg);
+    -ms-transform:     rotateX(42deg);
+    -moz-transform:    rotateX(42deg);
+    -webkit-transform: rotateX(42deg);
+    transform-style:         preserve-3d;
+    -o-transform-style:      preserve-3d;
+    -ms-transform-style:     preserve-3d;
+    -moz-transform-style:    preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-origin:         top;
+    -o-transform-origin:      top;
+    -ms-transform-origin:     top;
+    -moz-transform-origin:    top;
+    -webkit-transform-origin: top;
+    transition:         transform         200ms ease-in-out;
+    -o-transition:      -o-transform      200ms ease-in-out;
+    -ms-transition:     -ms-transform     200ms ease-in-out;
+    -moz-transition:    -moz-transform    200ms ease-in-out;
+    -webkit-transition: -webkit-transform 200ms ease-in-out;
+}
+
+.new-select .selection{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    
+    cursor: pointer;
+    position: relative;
+    z-index: 20; /* Doit être supérieur au nombre d'option */
+    
+    transform:         rotateX(0deg);
+    -o-transform:      rotateX(0deg);
+    -ms-transform:     rotateX(0deg);
+    -moz-transform:    rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    transform-style:         preserve-3d;
+    -o-transform-style:      preserve-3d;
+    -ms-transform-style:     preserve-3d;
+    -moz-transform-style:    preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-origin:         top;
+    -o-transform-origin:      top;
+    -ms-transform-origin:     top;
+    -moz-transform-origin:    top;
+    -webkit-transform-origin: top;
+    transition:         transform         200ms ease-in-out;
+    -o-transition:      -o-transform      200ms ease-in-out;
+    -ms-transition:     -ms-transform     200ms ease-in-out;
+    -moz-transition:    -moz-transform    200ms ease-in-out;
+    -webkit-transition: -webkit-transform 200ms ease-in-out;
+}
+
+.new-select .selection p{
+    width: calc(100% - 60px);
+    position: relative;
+    
+    transition:         all 200ms ease-in-out;
+    -o-transition:      all 200ms ease-in-out;
+    -ms-transition:     all 200ms ease-in-out;
+    -moz-transition:    all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+}
+
+.new-select .selection:hover p, .new-select .selection.open p{
+    color: #bdc3c7;
+}
+
+.new-select .selection i{
+    display: block;
+    width: 1px;
+    height: 70%;
+    position: absolute;
+    right: -1px; top: 15%; bottom: 15%;
+    border: none;
+    background-color: #bbb;
+}
+
+.new-select .selection > span{
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 8px 0 8px; /* Height: 14px / Width: 16px */
+    border-color: #bbb transparent transparent transparent;
+    
+    position: absolute;
+    top: 18px; /* 50 / 2 - 14 / 2 */
+    right: 22px; /* 60 / 2 - 16 / 2 */
+}
+
+.new-select .selection.open > span{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 14px 8px;
+    border-color: transparent transparent #bbb transparent;
+}
+
+.new-option{
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    position: relative;
+    margin-top: 1px;
+    
+    position: absolute;
+    left: 0; right: 0;
+    
+    transition:         all 300ms ease-in-out;
+    -o-transition:      all 300ms ease-in-out;
+    -ms-transition:     all 300ms ease-in-out;
+    -moz-transition:    all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+}
+
+.new-option p{
+    width: calc(100% - 60px);
+}
+
+.new-option.reveal:hover{
+    background-color: #444;
+    color: #f5f5f5;
+}
+.subtitle2{
+  text-align: center;
+  padding-top: 30px;
+  font-size: 30px;
+}
+.sample {
+  margin: 20px auto;
+  text-align: left;
+  display: block;
+  border: 1px solid #000;
+}
+.sample .text {
+  text-align: left;
+  display: inline-block;
+}
+.subchapter2{
+margin: 20px auto;
+  text-align: left;
+  display: block;
+  width: 50%;
+  font-size: 30px;
+
+}
+.subchapter2 .text{
+  text-align: left;
+  display: inline-block;
+}
+.taitoru4{
+  text-align: center;
+  padding-top: 30px;
+  font-size: 20px;
+}
+able , td, th {
+  border: 1px solid #595959;
+  border-collapse: collapse;
+}
+td, th {
+  padding: 3px;
+  width: 30px;
+  height: 25px;
+}
+th {
+  background: #f0e6cc;
+}
+.even {
+  background: #fbf8f0;
+}
+.odd {
+  background: #fefcf9;
+}
+.box31{
+  width:100%;
+  padding-top: 40px;
+}
+.box30 {
+    margin: 2em 0;
+    background: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+    width: 300px;
+    text-align: center;
+    margin:0px auto;
+}
+.box30 .box-title {
+    font-size: 1.2em;
+    background: #5fc2f5;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.box30 p {
+    padding: 15px 20px;
+    margin: 0;
+}
+.kannsouitirann{
+  text-align: center;
+}
+.rannkinngu{
+  text-align: center;
+  padding-top: 60px;
+  font-size: 25px;
+}
+.modoru{
+  text-align: center;
+  font-size: 25px;
+}

@@ -1,0 +1,68 @@
+<div class="container"> <!-- ここを追加 -->
+      <div class="row">
+
+<div class="mypage"><h1>マイページ</h1>
+
+
+<div class="table-responsive col-md-8 col-md-offset-2">
+<table class="table table-striped">
+                <thead>
+	                <tr>
+	                	<th>ユーザー名<br></th>
+
+	                </tr>
+                </thead>
+	                <tbody>
+		            	<tr>
+		                        <td><%= @user.name %></td>
+
+		                </tr>
+	                </tbody>
+                
+
+            </table>
+        </div>
+
+<div class="syousetumenyu"><h2>小説メニュー</h2>
+<p><button type="button" class="btn btn-primary btn-lg active"><%= link_to '新規小説作成', new_book_path ,class: "btncolor"%></button></p>
+</div>
+
+
+
+
+
+<div class="kannsoumeyu"><h2>感想メニュー</h2>
+<p><button type="button" class="btn btn-primary btn-lg active"><%= link_to '書いた感想', user_impression_path(current_user) ,class: "btncolor"%></button></p>
+</div>
+</div>
+
+<div class="itirann"><h2>投稿済み小説一覧</h2></div>
+
+
+<div class="table-responsive col-md-8 col-md-offset-2">
+<table class="table table-striped">
+                <thead>
+	                <tr>
+	                	<th>小説タイトル</th>
+	                	<th>編集</th>
+	                	<th>削除</th>
+	                </tr>
+                </thead>
+                <% @user.books.each do |book| %>
+	                <tbody>
+		            	<tr>
+		                        <td><%= link_to book.title, book_path(book.id) %></td>
+		                        <td><%= link_to 'この小説を編集する', edit_book_path(book) %></td>
+		                        <td><%= link_to 'この小説を削除する', book_path, method: :'delete' %>
+		                </tr>
+	                </tbody>
+                <% end %>
+            </table>
+        </div>
+
+
+
+
+
+</div>
+</div>

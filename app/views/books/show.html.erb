@@ -1,0 +1,19 @@
+<div class="taitoru2"><%= @book.title %></div>
+<div class="arasuji3"><%= @book.arasuji %></div>
+<hr size="5">
+<% if @user == current_user %>
+<p><button type="button" class="btn btn-primary btn-lg active"><%= link_to '話を作成',  new_book_chapter_path(@book) ,class: "btncolor"%></button></p>
+<% end %>
+
+<h2>閲覧数</h2>
+<%= @book.read %>
+<% @book.chapter.each do |chapter| %>
+<div class="subtitle2"><span><%=link_to chapter.subtitle, book_chapter_path(@book, chapter) %></span></div><br>
+
+<% end %>
+
+<hr size="5">
+<% if user_signed_in? %>
+<%= link_to '感想を書く',  new_book_impression_path(@book) ,class: "btncolor"%>
+<% end %>
+<%= link_to '感想一覧',  book_impressions_path(@book) ,class: "btncolor"%>

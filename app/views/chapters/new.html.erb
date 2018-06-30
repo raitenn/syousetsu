@@ -1,0 +1,48 @@
+<h1>サブタイトル作成</h1>
+<% if @chapter.errors.any? %>
+  <div id="error_explanation" class="alert alert-danger">
+    <ul>
+      <% @chapter.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+<select class="old-select">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="sass">SASS</option>
+    <option value="javascript">Javascript</option>
+    <option value="jquery" selected>jQuery</option>
+</select>
+
+<!-- Bouton Select reconstruit -->
+<div class="new-select">
+    <div class="selection">
+        <p>
+            <span></span>
+            <i></i>
+        </p>
+        <span></span>
+    </div>
+</div>
+
+
+
+
+
+	<%= form_for([@book,@chapter]) do |f| %>
+        <%#= f.select :subtitle, @chapters.map{|t| [t.title, t.id]} %>
+
+        <h4>サブタイトル</h4>
+            <div class="sub2">
+                <%= f.text_area :subtitle, :size => '50x1'%>
+            </div>
+
+
+
+		<h4>サブタイトル内容</h4>
+	    <%= f.text_area :subchapter, :size => '150x50' %>
+
+    <%= f.submit 'レビューに移る' %>
+<% end %>

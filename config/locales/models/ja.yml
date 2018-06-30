@@ -1,0 +1,12 @@
+
+ja:
+  activerecord:
+    attributes:
+      book:
+      chapter:
+      impression:
+        title: 小説のタイトル名
+        arasuji: 小説のあらすじ
+        subtitle: サブタイトル
+        subchapter: 小説の本文
+        impression: 感想

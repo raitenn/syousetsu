@@ -1,0 +1,43 @@
+<div class="container"> <!-- ここを追加 -->
+      <div class="row">
+
+
+		<h1>感想一覧</h1>
+		<%#= paginate @user.impressions %>
+
+<div class="table-responsive col-md-8 col-md-offset-2">
+<table class="table table-striped">
+                <thead>
+	                <tr>
+	                	<th>感想</th>
+	                	<th>削除</th>
+
+	                </tr>
+                </thead>
+                <% @user.impressions.each do |impression| %>
+	                <tbody>
+		            	<tr>
+		                        <td>
+										<div class="box31">
+											<div class="box30">
+											    <div class="box-title"><%= impression.user.name %></div>
+											    <p><%= impression.impression %></p>
+											</div>
+										</div>
+									
+								</td>
+		                        <td>
+		                        	<%= link_to 'この感想を削除する', impression_path(impression.user.id,impression), method: :'delete' %>
+		                        </td>
+<% end %>
+		                </tr>
+	                </tbody>
+            </table>
+        </div>
+		
+
+	</div>
+</div>
+
+<%# @impressions %>
+

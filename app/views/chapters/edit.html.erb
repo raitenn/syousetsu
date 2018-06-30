@@ -1,0 +1,13 @@
+<h4>サブタイトル</h4>
+<%= form_for([@book,@chapter]) do |f| %>
+            <div class="sub2">
+                <%= f.text_area :subtitle, :size => '50x1'%>
+            </div>
+
+
+
+		<h4>サブタイトル内容</h4>
+	    <%= f.text_area :subchapter, :size => '150x50' %>
+
+    <%= f.submit '編集する' %>
+<% end %>
